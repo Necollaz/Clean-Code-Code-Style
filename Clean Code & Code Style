@@ -1,9 +1,9 @@
-public static int ConstrainValue(int a, int b, int c)
+public static int Clamp(int value, int minValue, int maxValue)
 {
-    if (a < b)
-        return b;
-    else if (a > c)
-        return c;
+    if (value < minValue)
+        return minValue;
+    else if (value > maxValue)
+        return maxValue;
     else
-        return a;
+        return value;
 }
