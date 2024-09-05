@@ -1,10 +1,10 @@
-public static int FindIndex(int[] array, int element)
+public class Weapon
 {
-    int elementNotFound = -1;
+    private int _bullets;
+    private int _numberPerShot = 1;
+    private int _minNumber = 0;
 
-    for (int i = 0; i < array.Length; i++)
-        if (array[i] == element)
-            return i;
+    public bool CanShoot() => _bullets > _minNumber;
 
-    return elementNotFound;
+    public void Shoot() => _bullets -= _numberPerShot;
 }
