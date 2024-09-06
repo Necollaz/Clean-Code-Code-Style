@@ -1,4 +1,10 @@
-public class Weapon
+public class Player { }
+
+public class WeaponHandler { }
+
+public class TargetFollower { }
+
+public class UnitRetriever
 {
-    public void Shoot() { }
+    public IReadOnlyCollection<Unit> UnitsToGet { get; private set; }
 }
