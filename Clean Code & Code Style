@@ -1,18 +1,3 @@
-public class Weapon
-{
-    private const int BulletsPerShot = 1;
-
-    private int _bullets;
-
-    public bool CanShoot => _bullets >= BulletsPerShot;
-
-    public void Shoot()
-    {
-        if(!CanShoot)
-        {
-            throw new InvalidOperationException("Недостаточно пуль для выстрела.");
-        }
-
-        _bullets -= BulletsPerShot;
-    }
-}
+private readonly int _armySize = 10;
+private readonly int _coinsCount = 10;
+private readonly string _name = "Vladislav";
